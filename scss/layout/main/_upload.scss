@@ -1,0 +1,86 @@
+.upload__choose-file {
+    display: none;
+}
+
+.header-name {
+    color: rgb(109, 109, 109);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.upload__header {
+    display: flex;
+    align-items: center;
+}
+
+.upload__header-extension {
+    color: $font-color;
+    font-size: 13px;
+    padding-left: 1%;
+}
+
+.upload__button {
+    @extend .border;
+    padding: 1% 4%;
+    margin: 5% 3%;
+}
+
+.upload__button-label {
+    @extend .item__name;
+}
+
+.upload__button-label::before {
+    @include icon("/assets/icons8-upload-to-cloud-24.png");
+}
+
+.upload__list {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.list__items {
+    list-style-type: none;
+}
+
+.items__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.item1 {
+    width: 47%;
+}
+
+.item2 {
+    width: 20%;
+}
+
+.item3 {
+    width: 28%;
+}
+
+.item4 {
+    width: 5%;
+}
+
+.list__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon__doc::before {
+    @include icon("/assets/icons8-document-24.png");
+}
+
+.item__file {
+    @extend .item__name;
+}
+
+.item__button-trash {
+    border: none;
+    cursor: pointer;
+    opacity: .7;
+}

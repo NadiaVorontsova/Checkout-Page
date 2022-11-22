@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+    padding: 2% 0 2% 3%;
+}
+
+.order__description {
+    width: 52%;
+}
+
+.description__block1 {
+    padding-right: 4%;
+}
+
+.block1__header {
+    @extend .text;
+    font-size: 13px;
+}
+
+.block1__header::before {
+    @include icon("/assets/icons8-scroll-24.png");
+}
+
+.block1__items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4%;
+    list-style-type: none;
+}
+
+.item__header {
+    @extend .text;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.item__info {
+    color: $font-color;
+    font-size: 12px;
+    padding-top: 9px;
+}
+
+.block2__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    padding-right: 3%;
+    justify-content: space-around;
+}
+
+.buttons__item {
+    @extend .border;
+    height: 40%;
+    color: $font-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.buttons__item:first-child {
+    background-color: #5fcbc6;
+    color:white
+}
+
+.block__help {
+    width: 35%;
+    border-left: 1px solid $border-color;
+    padding-left: 2%;
+    padding-right: 3%;
+}
+
+.help__header {
+    @extend .block1__header;
+}
+
+.help__header::before {
+    @include icon("/assets/icons8-help-24.png");
+}
+
+.help__info {
+    @extend .item__info;
+    padding-left: 10%;
+    padding-bottom: 3%;
+}
+
+.help__contact {
+    padding-left: 8%;
+    font-size: 13px;
+    color: rgb(109, 109, 109);
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+}

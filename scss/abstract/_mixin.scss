@@ -1,0 +1,5 @@
+@mixin icon ($url) {
+    content: url($url);
+    padding-right: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,32 @@
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__btn {
+    @extend .border;
+    padding: 10px 35px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $font-color;
+}
+
+.menu__btn_back::before {
+    @include icon("/assets/icons8-left-24.png");
+}
+
+.menu__btn_sign-in::before {
+    @include icon("/assets/icons8-male-user-24.png");
+}
+
+.select__button-add:hover,
+.select__wrapper:hover,
+.select__languange:hover,
+.upload__button-label:hover,
+.item_label:hover,
+.buttons__item:hover,
+.menu__btn:hover {
+    opacity: .8;
+    cursor: pointer;
+}

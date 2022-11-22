@@ -1,0 +1,119 @@
+.block__desired-tone {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 18%;
+    row-gap: 50px;
+}
+
+.select__desired-tone {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 3% 3%;
+    height: 250px;
+    width: 40%;
+}
+
+.desired-tone__label {
+    @extend .border;
+    color: rgb(109, 109, 109);
+    width: 250px;
+    padding: 15px 3vw;
+}
+
+.desired-tone__label:hover {
+    cursor: pointer;
+}
+
+.casual_label::before {
+    @include icon("/assets/icons8-communicate-24.png");
+}
+
+.pro_label::before {
+    @include icon("/assets/icons8-suitcase-24.png");  
+}
+
+.formal_label::before {
+    @include icon("/assets/icons8-megaphone-24.png");  
+}
+
+.range-urgent {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.range {
+    margin: 10% 5% 10% 2%;
+}
+
+.range__text {
+    display: flex;
+    justify-content: space-between;
+    @extend .text;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+.range__ipnut::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+}
+
+.input {
+    padding-left: 4.5%;
+    padding-right: 5%;
+}
+
+.range__ipnut {
+    width: 100%;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.range__ipnut::before,
+.range__ipnut::after {
+    content: "◦";
+    transform: scale(3);
+    color: $font-color;
+    display: block;
+    position: absolute;
+    margin-top: -7px;
+    padding: 0 3px;
+    z-index: 1;
+}
+
+.range__ipnut::before {
+    left: 0;
+}
+
+.range__ipnut::after {
+    right: 0;
+}
+
+.range__ipnut::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    margin-top: -5px;
+    border-radius: 10px;
+    background-color: $color-yellow;
+    z-index: 2;
+    position: relative;
+}
+
+.time-info {
+    padding: 2% 8%;
+}
+
+.time-info__header {
+    @extend .block1__header;
+}
+
+.time-info__header::before {
+    @include icon("/assets/icons8-info-24.png");
+}
