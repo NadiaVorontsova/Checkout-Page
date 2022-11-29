@@ -8,6 +8,10 @@
     font-weight: 500;
     font-size: 13px;
     align-self: center;
+
+    @media(max-width: 540px){
+        font-size: 10px;
+    }
 }
 
 .select {

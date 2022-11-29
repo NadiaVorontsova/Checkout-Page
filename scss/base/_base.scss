@@ -21,9 +21,14 @@
 
 .wrapper {
     margin: 3% 15%;
+
+    @media(max-width:913px){
+        margin: 3% 5%;
+    }
 }
 
 .main {
     @extend .border;
     margin-top: 8%;
 }
+

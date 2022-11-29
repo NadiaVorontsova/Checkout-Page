@@ -11,13 +11,15 @@
 
 .upload__header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .upload__header-extension {
     color: $font-color;
     font-size: 13px;
     padding-left: 1%;
+    align-self: center;
 }
 
 .upload__button {
@@ -38,6 +40,11 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
+
+    @media(max-width: 540px){
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .list__items {
@@ -48,22 +55,39 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 3%;
+    @extend .lang__header;
 }
 
 .item1 {
     width: 47%;
+    
+    @media(max-width: 540px){
+        width: 55%;
+    }
 }
 
 .item2 {
     width: 20%;
+
+    @media(max-width: 540px){
+        width: 20%;
+    }
 }
 
 .item3 {
     width: 28%;
+
+    @media(max-width: 540px){
+        width: 20%;
+    }
 }
 
 .item4 {
     width: 5%;
+
+    @media(max-width: 540px){
+        width: 10%;
+    }
 }
 
 .list__item {
@@ -71,8 +95,19 @@
     justify-content: space-between;
 }
 
+.icon__doc {
+    @media(max-width: 540px){
+        width: 45%;
+        overflow: hidden;
+    }
+}
+
 .icon__doc::before {
     @include icon("/assets/icons8-document-24.png");
+
+    @media(max-width: 540px){
+        content: "";
+    }
 }
 
 .item__file {

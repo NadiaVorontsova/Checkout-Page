@@ -1,10 +1,16 @@
 .header {
     display: flex;
     padding: 2% 0 2% 3%;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .order__description {
     width: 52%;
+    
+    @media(max-width:540px){
+        width: 100%;
+    }
 }
 
 .description__block1 {
@@ -45,6 +51,7 @@
     width: 18%;
     padding-right: 3%;
     justify-content: space-around;
+    flex-grow: 1;
 }
 
 .buttons__item {
@@ -62,10 +69,11 @@
 }
 
 .block__help {
-    width: 35%;
+    width: 30%;
     border-left: 1px solid $border-color;
     padding-left: 2%;
     padding-right: 3%;
+    flex-grow: 1;
 }
 
 .help__header {

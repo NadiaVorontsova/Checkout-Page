@@ -301,8 +301,113 @@
             </div>
           </div>
         </section>
+        <section class="padding-for-block">
+          <h2 class="header-name">5. Sign up and choose a payment method</h2>
+          <p class="sign-up-info">Already have an account with us? Sign in.</p>
+          <div class="input__block">
+            <div class="input__block1">
+              <label for="full_name" class="input-name__header"
+                >Full name</label
+              >
+              <input
+                type="text"
+                id="full_name"
+                placeholder="Joe Doe"
+                minlength="4"
+                maxlength="25"
+                class="input__sign-in"
+                required
+              />
+              <span class="indicator"></span>
+            </div>
+            <div class="input__block2">
+              <div>
+                <label for="email" class="input-name__header">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@domaine.com"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  class="input__sign-in input__email"
+                  required
+                />
+                <span class="indicator"></span>
+              </div>
+              <div>
+                <label for="password" class="input-name__header"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  class="input__sign-in input__password"
+                  placeholder="Enter your password"
+                  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                  title="Minimum 8 characters, uppercase, lowercase and number"
+                  minlength="6"
+                  required
+                />
+                <span class="indicator"></span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
-    <!-- <footer style="background-color: blue; height: 100px"></footer> -->
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="info">
+          <h3 class="info__header">What we do</h3>
+          <p class="info__text">
+            We provide a full range of language services including content
+            development, document, website and social media accounts
+            translations.
+          </p>
+        </div>
+        <div class="info">
+          <h3 class="info__header">Our main office</h3>
+          <address class="info__text">
+            Dubai, UAE<br />
+            P. O. Box: 502735<br />
+            Phone
+            <a href="tel:+971(0)555555" class="text__number"
+              >+971 (0) 44278128</a
+            >
+          </address>
+        </div>
+        <div class="info">
+          <h3 class="info__header">Connect with us</h3>
+          <address class="info__text">
+            <a
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+              class="text__social-ntw text__social-networks-fcb"
+              >Facebook</a
+            >
+            <a
+              href="https://twitter.com/twitter?lang=uk"
+              target="_blank"
+              class="text__social-ntw text__social-networks-tw"
+              >Twitter</a
+            >
+            <a
+              href="https://ua.linkedin.com/"
+              target="_blank"
+              class="text__social-ntw text__social-networks-lIn"
+              >LinkedIn</a
+            >
+          </address>
+        </div>
+        <div class="info">
+          <img
+            src="/assets/logo.jpg"
+            alt=""
+            width="100"
+            height="105"
+            class="info__logo"
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

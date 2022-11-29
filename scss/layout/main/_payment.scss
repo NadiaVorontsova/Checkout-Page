@@ -1,0 +1,71 @@
+.sign-up-info {
+    color: rgb(109, 109, 109);
+    font-weight: 400;
+    font-size: 15px;
+    opacity: .8;
+    padding: 5% 0 4% 3%;
+}
+
+.input__block {
+    padding: 0 4%;
+}
+
+.input__block1 {
+    margin-bottom: 20px;
+}
+
+.input-name__header {
+    @extend .lang__header;
+    display: block;
+    padding-bottom: 8px;
+}
+
+.input__block2 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6%;
+    row-gap: 20px;
+}
+
+.input__sign-in {
+    height: 35px;
+    font-size: 14px;
+    padding: 0 15px;
+    cursor: pointer;
+    @extend .border;
+    color: rgb(109, 109, 109);
+    background-color: transparent;
+    position: relative;
+}
+
+.input__sign-in::placeholder {
+    opacity: .6;
+}
+
+.indicator {
+    padding-top: 3px;
+    padding-left: 1%;
+}
+
+.input__sign-in + .indicator {
+    position: absolute;
+}
+
+.input__sign-in:focus-within:invalid {
+    outline: red solid 1px;
+}
+
+.input__sign-in:focus-within:valid {
+    outline: green solid 1px;
+}
+
+.input__sign-in:invalid + .indicator::before {
+    content: "✖";
+    color: red;
+  }
+  
+.input__sign-in:valid + .indicator::before {
+    content: "✓";
+    color: green;
+  }
+

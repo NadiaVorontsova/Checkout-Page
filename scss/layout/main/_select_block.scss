@@ -1,6 +1,10 @@
 .block__select {
     border-top: 1px solid $border-color;
     padding: 9% 15% 7% 15%;
+
+    @media(max-width:540px){
+        padding: 10% 4% 7% 4%;
+    }
 }
 
 .select__header {
