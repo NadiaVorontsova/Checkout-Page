@@ -23,7 +23,7 @@
 }
 
 .block1__header::before {
-    @include icon("/assets/icons8-scroll-24.png");
+    @include icon("../assets/icons8-scroll-24.png");
 }
 
 .block1__items {
@@ -81,7 +81,7 @@
 }
 
 .help__header::before {
-    @include icon("/assets/icons8-help-24.png");
+    @include icon("../assets/icons8-help-24.png");
 }
 
 .help__info {

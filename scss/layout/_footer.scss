@@ -44,19 +44,19 @@
 }
 
 .text__social-networks-fcb::before {
-   content: url(/assets/icons8-facebook-24.png);
+   content: url(../assets/icons8-facebook-24.png);
 }
 
 .text__social-networks-tw::before {
-    content: url(/assets/icons8-twitter-24.png);
+    content: url(../assets/icons8-twitter-24.png);
 }
 
 .text__social-networks-lIn::before {
-    content: url(/assets/icons8-linkedin-24.png);
+    content: url(../assets/icons8-linkedin-24.png);
 }
 
 .info__header::before {
-    @include icon("/assets/icons8-heart-24.png");
+    @include icon("../assets/icons8-heart-24.png");
 }
 
 .text__number {

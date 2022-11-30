@@ -33,7 +33,7 @@
 }
 
 .upload__button-label::before {
-    @include icon("/assets/icons8-upload-to-cloud-24.png");
+    @include icon("../assets/icons8-upload-to-cloud-24.png");
 }
 
 .upload__list {
@@ -103,7 +103,7 @@
 }
 
 .icon__doc::before {
-    @include icon("/assets/icons8-document-24.png");
+    @include icon("../assets/icons8-document-24.png");
 
     @media(max-width: 540px){
         content: "";

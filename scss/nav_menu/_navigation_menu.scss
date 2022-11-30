@@ -13,11 +13,11 @@
 }
 
 .menu__btn_back::before {
-    @include icon("/assets/icons8-left-24.png");
+    @include icon("../assets/icons8-left-24.png");
 }
 
 .menu__btn_sign-in::before {
-    @include icon("/assets/icons8-male-user-24.png");
+    @include icon("../assets/icons8-male-user-24.png");
 }
 
 .select__button-add:hover,

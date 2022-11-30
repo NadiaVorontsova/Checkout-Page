@@ -54,13 +54,13 @@
 }
 
 .menu__btn_back::before {
-  content: url("/assets/icons8-left-24.png");
+  content: url("../assets/icons8-left-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
 
 .menu__btn_sign-in::before {
-  content: url("/assets/icons8-male-user-24.png");
+  content: url("../assets/icons8-male-user-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
@@ -101,7 +101,7 @@
 }
 
 .block1__header::before, .time-info__header::before, .help__header::before {
-  content: url("/assets/icons8-scroll-24.png");
+  content: url("../assets/icons8-scroll-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
@@ -155,7 +155,7 @@
 }
 
 .help__header::before {
-  content: url("/assets/icons8-help-24.png");
+  content: url("../assets/icons8-help-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
@@ -268,7 +268,7 @@
 }
 
 .upload__button-label::before {
-  content: url("/assets/icons8-upload-to-cloud-24.png");
+  content: url("../assets/icons8-upload-to-cloud-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
@@ -344,7 +344,7 @@
 }
 
 .icon__doc::before {
-  content: url("/assets/icons8-document-24.png");
+  content: url("../assets/icons8-document-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
@@ -421,7 +421,7 @@
 .select__wrapper::after {
   content: "";
   display: block;
-  background-image: url(/assets/icons8-down-button-24.png);
+  background-image: url(../assets/icons8-down-button-24.png);
   background-repeat: no-repeat;
   width: 60px;
   height: 50px;
@@ -447,7 +447,7 @@
 }
 
 .select__button-add::before {
-  content: url("/assets/icons8-plus-24.png");
+  content: url("../assets/icons8-plus-24.png");
   padding-right: 10px;
   vertical-align: middle;
   opacity: 0.7;
@@ -481,19 +481,19 @@
 }
 
 .casual_label::before {
-  content: url("/assets/icons8-communicate-24.png");
+  content: url("../assets/icons8-communicate-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
 
 .pro_label::before {
-  content: url("/assets/icons8-suitcase-24.png");
+  content: url("../assets/icons8-suitcase-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
 
 .formal_label::before {
-  content: url("/assets/icons8-megaphone-24.png");
+  content: url("../assets/icons8-megaphone-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
@@ -572,7 +572,7 @@
 }
 
 .time-info__header::before {
-  content: url("/assets/icons8-info-24.png");
+  content: url("../assets/icons8-info-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
@@ -703,19 +703,19 @@
 }
 
 .text__social-networks-fcb::before {
-  content: url(/assets/icons8-facebook-24.png);
+  content: url(../assets/icons8-facebook-24.png);
 }
 
 .text__social-networks-tw::before {
-  content: url(/assets/icons8-twitter-24.png);
+  content: url(../assets/icons8-twitter-24.png);
 }
 
 .text__social-networks-lIn::before {
-  content: url(/assets/icons8-linkedin-24.png);
+  content: url(../assets/icons8-linkedin-24.png);
 }
 
 .info__header::before {
-  content: url("/assets/icons8-heart-24.png");
+  content: url("../assets/icons8-heart-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }

@@ -26,15 +26,15 @@
 }
 
 .casual_label::before {
-    @include icon("/assets/icons8-communicate-24.png");
+    @include icon("../assets/icons8-communicate-24.png");
 }
 
 .pro_label::before {
-    @include icon("/assets/icons8-suitcase-24.png");  
+    @include icon("../assets/icons8-suitcase-24.png");  
 }
 
 .formal_label::before {
-    @include icon("/assets/icons8-megaphone-24.png");  
+    @include icon("../assets/icons8-megaphone-24.png");  
 }
 
 .range-urgent {
@@ -115,5 +115,5 @@
 }
 
 .time-info__header::before {
-    @include icon("/assets/icons8-info-24.png");
+    @include icon("../assets/icons8-info-24.png");
 }
