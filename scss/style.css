@@ -22,7 +22,7 @@
   text-transform: uppercase;
 }
 
-.border, .input__sign-in, .desired-tone__label, .select__button-add, .select__languange, .upload__button, .select__item, .buttons__item, .menu__btn, .main {
+.border, .payment__label, .input__sign-in, .desired-tone__label, .select__button-add, .select__languange, .upload__button, .select__item, .buttons__item, .menu__btn, .main {
   border: 1px solid rgb(207, 207, 207);
   border-radius: 4px;
 }
@@ -38,6 +38,18 @@
 
 .main {
   margin-top: 8%;
+}
+
+.border-none {
+  border: 0 none;
+}
+
+.display-none {
+  display: none;
+}
+
+.padding-top-3 {
+  padding-top: 3px;
 }
 
 .nav__menu {
@@ -139,6 +151,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 11px;
+  width: 100%;
 }
 
 .buttons__item:first-child {
@@ -224,7 +237,7 @@
   align-self: center;
 }
 
-.item__name, .item__file, .upload__button-label {
+.item__name, .item__file, .upload__button .upload__button-label {
   color: rgb(109, 109, 109);
   font-weight: 500;
   font-size: 15px;
@@ -233,13 +246,10 @@
   padding-top: 1%;
 }
 
+.item__checkbox:checked + .payment__label,
 .item__checkbox:checked + .desired-tone__label,
 .item__checkbox:checked + .select__item {
   outline: #76a8e2 solid 4px;
-}
-
-.upload__choose-file {
-  display: none;
 }
 
 .header-name {
@@ -262,18 +272,41 @@
   align-self: center;
 }
 
-.upload__button {
-  padding: 1% 4%;
-  margin: 5% 3%;
+.upload {
+  margin: 5% 5%;
 }
 
-.upload__button-label::before {
+.upload__button {
+  padding: 1.5% 0;
+  margin: 5% 3%;
+}
+.upload__button .upload__button-label {
+  padding: 14px 35px;
+  position: relative;
+}
+.upload__button .upload__button-label::before {
   content: url("../assets/icons8-upload-to-cloud-24.png");
   padding-right: 10px;
   vertical-align: middle;
 }
+.upload__button .upload__choose-file {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.upload__choose-file:focus + .upload__button-label {
+  outline: 2px solid black;
+  border-radius: 5px;
+}
 
 .upload__list {
+  margin-top: 3%;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
@@ -373,7 +406,7 @@
 }
 @media (max-width: 540px) {
   .lang__header, .input-name__header, .items__header {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
@@ -443,6 +476,7 @@
 
 .select__button-add {
   margin-left: 3%;
+  margin-right: 6%;
   padding: 10px 20px;
 }
 
@@ -475,7 +509,6 @@
   width: 250px;
   padding: 15px 3vw;
 }
-
 .desired-tone__label:hover {
   cursor: pointer;
 }
@@ -586,7 +619,7 @@
 }
 
 .input__block {
-  padding: 0 4%;
+  margin: 0 4%;
 }
 
 .input__block1 {
@@ -653,6 +686,62 @@
 .input__sign-in:valid + .indicator::before {
   content: "✓";
   color: green;
+}
+
+.payment_block {
+  margin: 8% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
+  row-gap: 8px;
+}
+
+.payment__label {
+  color: rgb(109, 109, 109);
+  width: 230px;
+  padding: 22px 9%;
+}
+.payment__label:hover {
+  cursor: pointer;
+}
+@media (max-width: 540px) {
+  .payment__label {
+    width: 145px;
+  }
+}
+
+.card__fields {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  row-gap: 16px;
+}
+
+.expiry-date_input {
+  width: 60%;
+}
+
+.card__field {
+  margin-left: -75px;
+}
+@media (max-width: 740px) {
+  .card__field {
+    margin-left: 0;
+  }
+}
+
+.code-card_input {
+  width: 40%;
+}
+
+.block__agree-order {
+  display: flex;
+  margin: 13% 4% 7% 4%;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .footer {

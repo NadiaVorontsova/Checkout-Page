@@ -19,11 +19,12 @@
     color: rgb(109, 109, 109);
     width: 250px;
     padding: 15px 3vw;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.desired-tone__label:hover {
-    cursor: pointer;
-}
 
 .casual_label::before {
     @include icon("../assets/icons8-communicate-24.png");

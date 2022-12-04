@@ -58,6 +58,7 @@
     padding-top: 1%;
 }
 
+.item__checkbox:checked + .payment__label,
 .item__checkbox:checked + .desired-tone__label,
 .item__checkbox:checked + .select__item {
     outline: #76a8e2 solid 4px;

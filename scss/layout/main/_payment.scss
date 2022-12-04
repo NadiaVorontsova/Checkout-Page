@@ -7,7 +7,7 @@
 }
 
 .input__block {
-    padding: 0 4%;
+    margin: 0 4%;
 }
 
 .input__block1 {
@@ -67,5 +67,62 @@
 .input__sign-in:valid + .indicator::before {
     content: "✓";
     color: green;
-  }
+}
 
+.payment_block {
+    margin: 8% 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    column-gap: 1%;
+    row-gap: 8px;
+}
+
+.payment__label {
+    @extend .border;
+    color: rgb(109, 109, 109);
+    width: 230px;
+    padding: 22px 9%;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media(max-width: 540px){
+        width: 145px;
+    }
+}
+
+.card__fields {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 16px;
+}
+
+.expiry-date_input {
+    width: 60%;
+}
+
+.card__field {
+    margin-left: -75px;
+
+    @media(max-width: 740px){
+        margin-left: 0;
+    }
+}
+
+.code-card_input {
+   width: 40%;
+}
+
+.block__agree-order {
+    display: flex;
+    margin: 13% 4% 7% 4%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttons {
+    
+}

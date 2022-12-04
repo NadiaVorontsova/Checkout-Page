@@ -15,7 +15,7 @@
           Sign in
         </button>
       </nav>
-      <main class="main">
+      <form class="main">
         <header class="header">
           <section class="order__description">
             <div class="description__block1">
@@ -108,18 +108,20 @@
               (Doc, Docx, Text, PDF, Markdown)</span
             >
           </div>
-          <button type="button" class="upload__button">
-            <label for="upload-file" class="upload__button-label"
-              >Upload a new file</label
-            >
-          </button>
-          <input
-            type="file"
-            id="upload-file"
-            name="upload_file"
-            accept=".doc, .docx, .txt, .pdf, .md"
-            class="upload__choose-file"
-          />
+          <div class="upload">
+            <label class="upload__button">
+              <input
+                type="file"
+                id="file"
+                name="file"
+                accept=".doc,.docx,.txt,.pdf,.md"
+                class="upload__choose-file"
+                multiple
+                required
+              />
+              <span class="upload__button-label">Upload a new file</span>
+            </label>
+          </div>
           <div class="upload__list">
             <ul class="list__items">
               <li class="items__header">
@@ -216,6 +218,7 @@
                 <option value="kurdish">Kurdish</option>
               </select>
             </div>
+            <button type="button" class="select__button-add">Add</button>
             <button class="item__button-trash">
               <img
                 src="./assets/icons8-remove-24.png"
@@ -224,7 +227,6 @@
                 alt=""
               />
             </button>
-            <button type="button" class="select__button-add">Add</button>
           </div>
         </section>
         <section class="block__desired-tone padding-for-block">
@@ -304,7 +306,8 @@
         <section class="padding-for-block">
           <h2 class="header-name">5. Sign up and choose a payment method</h2>
           <p class="sign-up-info">Already have an account with us? Sign in.</p>
-          <div class="input__block">
+          <fieldset class="input__block border-none">
+            <legend class="display-none">Sign in</legend>
             <div class="input__block1">
               <label for="full_name" class="input-name__header"
                 >Full name</label
@@ -350,9 +353,106 @@
                 <span class="indicator"></span>
               </div>
             </div>
-          </div>
+          </fieldset>
+          <fieldset class="payment_block border-none">
+            <legend class="display-none">Payment</legend>
+            <input
+              type="radio"
+              id="card_checkbox"
+              class="item__checkbox"
+              name="payment"
+            />
+            <label tabindex="0" for="card_checkbox" class="payment__label">
+              <img src="./assets/icons8-visa-30.png" alt="" />
+              <img src="./assets/icons8-mastercard-30.png" alt="" />
+            </label>
+            <input
+              type="radio"
+              id="paypal_checkbox"
+              class="item__checkbox"
+              name="payment"
+            />
+            <label tabindex="0" for="paypal_checkbox" class="payment__label">
+              <img
+                src="./assets/PayPal_logo.png"
+                width="80"
+                height="25"
+                alt=""
+                class="padding-top-3"
+              />
+            </label>
+            <input
+              type="radio"
+              id="amazon_checkbox"
+              class="item__checkbox"
+              name="payment"
+            />
+            <label tabindex="0" for="amazon_checkbox" class="payment__label">
+              <img
+                src="./assets/amazon.png"
+                width="90"
+                height="25"
+                alt=""
+                class="padding-top-3"
+              />
+            </label>
+          </fieldset>
+          <fieldset class="input__block border-none">
+            <legend class="display-none">Card</legend>
+            <div class="card__fields">
+              <div>
+                <label for="credit-number" class="input-name__header"
+                  >Card number
+                </label>
+                <input
+                  name="credit-number"
+                  class="input__sign-in"
+                  type="tel"
+                  pattern="\d*"
+                  maxlength="16"
+                  placeholder="Card Number"
+                />
+              </div>
+              <div>
+                <label for="credit-expires" class="input-name__header"
+                  >Expiry date
+                </label>
+                <input
+                  name="credit-expires"
+                  class="input__sign-in expiry-date_input"
+                  type="tel"
+                  pattern="\d*/\d*"
+                  maxlength="5"
+                  placeholder="MM / YY"
+                />
+              </div>
+              <div class="card__field">
+                <label for="credit-cvc" class="input-name__header">Code </label>
+                <input
+                  name="credit-cvc"
+                  class="input__sign-in code-card_input"
+                  type="tel"
+                  pattern="\d*"
+                  maxlength="3"
+                  placeholder="CVC"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <!-- <fieldset class="block__agree-order border-none">
+            <legend class="display-none">Agree</legend>
+            <div>
+              <input type="checkbox" id="argee_checkbox" />
+              <label for="argee_checkbox" class=""
+                >I agree to The Terms & Conditions</label
+              >
+            </div>
+
+            <button class="buttons__item" type="button">Place order</button>
+            <button class="buttons__item" type="button">Print a quote</button>
+          </fieldset> -->
         </section>
-      </main>
+      </form>
     </div>
     <footer class="footer">
       <div class="footer__info">
