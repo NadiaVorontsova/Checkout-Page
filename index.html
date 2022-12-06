@@ -123,44 +123,48 @@
             </label>
           </div>
           <div class="upload__list">
-            <ul class="list__items">
-              <li class="items__header">
-                <span class="item1">File name</span>
-                <span class="item2">File size</span>
-                <span class="item3">Number of words</span>
-                <span class="item4">Remove</span>
-              </li>
-              <li class="list__item">
-                <span class="item__file icon__doc"
-                  >business_operations.docx</span
-                >
-                <span class="item__file">78kb</span>
-                <span class="item__file">985</span>
-                <button class="item__button-trash">
-                  <img
-                    src="./assets/icons8-remove-24.png"
-                    width="24"
-                    height="24"
-                    alt=""
-                  />
-                </button>
-              </li>
-              <li class="list__item">
-                <span class="item__file icon__doc"
-                  >business_operations.docx</span
-                >
-                <span class="item__file">78kb</span>
-                <span class="item__file">985</span>
-                <button class="item__button-trash">
-                  <img
-                    src="./assets/icons8-remove-24.png"
-                    width="24"
-                    height="24"
-                    alt=""
-                  />
-                </button>
-              </li>
-            </ul>
+            <table class="list__items">
+              <thead>
+                <tr class="items__header">
+                  <th>File name</th>
+                  <th>File size</th>
+                  <th>Number of words</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="list__item">
+                  <td class="item__file icon__doc">business_operations.docx</td>
+                  <td class="item__file">78kb</td>
+                  <td class="item__file">985</td>
+                  <td>
+                    <button class="item__button-trash">
+                      <img
+                        src="./assets/icons8-remove-24.png"
+                        width="24"
+                        height="24"
+                        alt=""
+                      />
+                    </button>
+                  </td>
+                </tr>
+                <tr class="list__item">
+                  <td class="item__file icon__doc">business_operations.docx</td>
+                  <td class="item__file">78kb</td>
+                  <td class="item__file">985</td>
+                  <td>
+                    <button class="item__button-trash">
+                      <img
+                        src="./assets/icons8-remove-24.png"
+                        width="24"
+                        height="24"
+                        alt=""
+                      />
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
         <section class="padding-for-block">

@@ -58,82 +58,36 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
-
-    @media(max-width: 540px){
+    
+    @media(max-width: 740px){
         margin-left: 0;
         margin-right: 0;
+        overflow-x: scroll;
     }
 }
 
 .list__items {
-    list-style-type: none;
+    width: 100%;
+    border-spacing: 40px 0;
 }
 
 .items__header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3%;
     @extend .lang__header;
-}
-
-.item1 {
-    width: 47%;
-    
-    @media(max-width: 540px){
-        width: 55%;
-    }
-}
-
-.item2 {
-    width: 20%;
-
-    @media(max-width: 540px){
-        width: 20%;
-    }
-}
-
-.item3 {
-    width: 28%;
-
-    @media(max-width: 540px){
-        width: 20%;
-    }
-}
-
-.item4 {
-    width: 5%;
-
-    @media(max-width: 540px){
-        width: 10%;
-    }
-}
-
-.list__item {
-    display: flex;
-    justify-content: space-between;
-}
-
-.icon__doc {
-    @media(max-width: 540px){
-        width: 45%;
-        overflow: hidden;
-    }
+    text-align: left;
 }
 
 .icon__doc::before {
-    @include icon("../assets/icons8-document-24.png");
-
-    @media(max-width: 540px){
-        content: "";
-    }
+    @include icon("../assets/icons8-document-24.png");  
 }
 
 .item__file {
     @extend .item__name;
+    text-align: left;
 }
 
 .item__button-trash {
     border: none;
     cursor: pointer;
     opacity: .7;
+    text-align: center;
 }
