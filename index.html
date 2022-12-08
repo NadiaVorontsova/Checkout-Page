@@ -41,8 +41,8 @@
             </div>
           </section>
           <div class="block2__buttons">
-            <button class="buttons__item" type="button">Place order</button>
-            <button class="buttons__item" type="button">Print a quote</button>
+            <button class="buttons__item" type="submit">Place order</button>
+            <button class="buttons__item" type="submit">Print a quote</button>
           </div>
           <aside class="block__help">
             <h2 class="help__header">Help center</h2>
@@ -443,18 +443,27 @@
               </div>
             </div>
           </fieldset>
-          <!-- <fieldset class="block__agree-order border-none">
+          <fieldset class="block__agree-order border-none">
             <legend class="display-none">Agree</legend>
             <div>
-              <input type="checkbox" id="argee_checkbox" />
-              <label for="argee_checkbox" class=""
+              <input
+                type="checkbox"
+                id="argee_checkbox"
+                class="agree-order__input"
+              />
+              <label for="argee_checkbox" class="agree-order__label"
                 >I agree to The Terms & Conditions</label
               >
             </div>
-
-            <button class="buttons__item" type="button">Place order</button>
-            <button class="buttons__item" type="button">Print a quote</button>
-          </fieldset> -->
+            <div class="block2__buttons buttons">
+              <button class="buttons__item button-order" type="submit">
+                Place order
+              </button>
+              <button class="buttons__item button-order" type="submit">
+                Print a quote
+              </button>
+            </div>
+          </fieldset>
         </section>
       </form>
     </div>
